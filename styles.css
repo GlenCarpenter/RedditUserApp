@@ -1,0 +1,70 @@
+input {
+	font-size: 1.6em;
+	border: 1px;
+	border-color: #EB4923;
+	border-style: solid;
+	font-family: 'Roboto', sans-serif;
+	padding: 5px;
+}
+
+body {
+  text-align: left;
+}
+
+.tables {
+	border: 3px;
+	border-color: #EB4923;
+	border-style: solid;
+}
+
+/* styling for buttons */
+.buttons {
+	margin-top: 30px;
+	text-align: left;
+	font-family: 'Raleway', sans-serif;
+}
+
+button {
+	background:#EB4923;
+	border-color: #EB4923;
+	border-style: solid;
+	color: #fff;
+	border: none;
+	position: relative;
+	height: 60px;
+	font-size: 1.6em;
+	cursor: pointer;
+	transition: 800ms ease all;
+	outline: none;
+	width: 100%;
+	margin-bottom: 5px;
+	font-family: 'Raleway', sans-serif;
+}
+
+button:hover {
+	background: #fff;
+	color: #EB4923;
+}
+
+button:before,button:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 2px;
+	width: 0;
+	background: #EB4923;
+	transition: 400ms ease all;
+}
+
+button:after {
+	right: inherit;
+	top: inherit;
+	left: 0;
+	bottom: 0;
+}
+
+button:hover:before,button:hover:after {
+	width: 100%;
+	transition: 800ms ease all;
+}
